@@ -1,14 +1,14 @@
 # Gaming Store ¡Jugá sin límites!
 
-[![Gaming Store](https://iili.io/J6J1gN1.png "Gaming Store")](https://rodrigoenter.github.io/Pagina-Gaming-Store "Gaming Store")
+[![Gaming Store](https://iili.io/J6J1gN1.png "Gaming Store")](https://github.com/rodrigoenter/gaming-store "Gaming Store")
 
 Tienda de productos gamers, enfocada en proporcionar lo último en artículos y accesorios para disfrutar al máximo de tus juegos favoritos con la mejor atención, calidad y variedad disponibles.
 
 -------------------------
-##### Dominio: https://
+##### Dominio: gaming-store-tau.vercel.app
 
 -------------------------
-##### Repositorio de [GitHub](https://github.com/rodrigoenter/Pagina-Gaming-Store)
+##### Repositorio de [GitHub](https://github.com/rodrigoenter/gaming-store)
 
 -------------------------
 ##### Recursos utilizados:
