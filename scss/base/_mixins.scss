@@ -1,0 +1,44 @@
+//Mixins para centrar títulos
+@mixin centrar-titulo {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $blanco;
+}
+
+//Mixins botón comprar
+@mixin btn-comprar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 20px;
+  background-image: $gradiente-rosa-rojo;
+  border-radius: 25px;
+  font-size: 25px;
+  color: $blanco;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+//Mixins botón secundario
+@mixin btn-secundario {
+  padding: 8px 8px;
+  text-decoration: none;
+  background-color: $color-rosa;
+  color: $blanco;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-image: linear-gradient($rojo 5%, $color-rosa);
+    transition: all 0.3s ease 0s;
+  }
+}

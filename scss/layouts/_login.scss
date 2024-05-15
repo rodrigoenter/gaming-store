@@ -1,0 +1,123 @@
+/*-----Login-----*/
+
+.container-login {
+    display: flex;
+    height: 600px;
+    width: 1000px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* Se ha añadido una sombra de ejemplo */
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+.saludo-login {
+    background-image: url(../assets/images/background-login.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+
+    .titulo-saludo {
+        color: $blanco;
+        text-transform: uppercase;
+        font-size: 30px;
+        margin-top: 25px;
+    }
+
+    h2 {
+        color: $blanco;
+        text-transform: uppercase;
+        font-size: 28px;
+        margin-bottom: 0;
+    }
+
+    hr {
+        width: 400px;
+        border: 2px solid $rosa-secundario;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .texto-saludo {
+        color: $blanco;
+        font-size: 20px;
+    }
+}
+
+.form-login {
+    padding: 50px auto;
+    width: 50%;
+    text-align: center;
+    background-color: $azul-secundario;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        color: $blanco;
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    p {
+        font-size: 16px;
+        color: $blanco;
+    }
+
+    .inputs-login {
+        display: flex;
+        flex-direction: column;
+
+        .box {
+            outline: none;
+            border-color: $color-rosa;
+            border-width: 0px 0px 0px 2px;
+            border-radius: 5px;
+            border-style: solid;
+            padding: 10px 15px;
+            margin-top: 15px;
+            background-color: $blanco;
+
+            &::placeholder {
+                color: $azul-background;
+                font-size: 16px;
+                font-style: italic;
+            }
+        }
+
+        a {
+            color: $blanco;
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+    }
+
+    .submit {
+        background-color: $color-rosa;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 50px;
+        color: $blanco;
+        font-weight: 500;
+        text-transform: none;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            background-image: $gradiente-rosa-rojo;
+            transition: all 0.3s ease 0s;
+        }
+    }
+}
+
+@include responsive-login;

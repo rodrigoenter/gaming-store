@@ -1,0 +1,197 @@
+/*-----Encabezado/Navbar-----*/
+
+.encabezado {
+    background-color: $azul-primario;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 5px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.logo img {
+    max-width: 200px;
+    height: auto;
+}
+
+.encabezado {
+    .logo {
+        cursor: pointer;
+
+        img {
+            height: 49px;
+            width: auto;
+            transition: all 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .links-navegacion {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline;
+            align-items: center;
+            padding: 25px;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            a {
+                font-size: 22px;
+                font-weight: 500;
+                color: $blanco;
+
+                &:hover {
+                    color: $color-rosa;
+                }
+            }
+        }
+    }
+}
+
+.menu {
+    display: none;
+}
+
+.encabezado {
+
+    .btn button,
+    .menu button {
+        font-size: 20px;
+        font-weight: 500;
+        color: $blanco;
+        padding: 5px 15px;
+        background: $rojo;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+
+    .btn button:hover,
+    .menu button:hover {
+        background-color: $color-rosa;
+        color: $blanco;
+        transform: scale(1.1);
+    }
+
+    .links-navegacion li.active a {
+        color: $color-rosa;
+        position: relative;
+        color: $color-rosa;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            border-radius: 10px;
+            background-color: $color-rosa;
+        }
+    }
+}
+
+/*-----Encabezado/Navbar: Menú hamburguesa-----*/
+
+.encabezado a {
+    text-decoration: none;
+}
+
+.menu-divider {
+    border: none;
+    border-top: 1px solid $blanco;
+    width: 75%;
+    margin: 5px auto;
+}
+
+.encabezado .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $azul-background;
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+    .overlay-content {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    a {
+        padding: 10px;
+        font-size: 32px;
+        color: $blanco;
+        display: block;
+        font-weight: 700;
+
+        &:hover,
+        &:focus {
+            color: $color-rosa;
+        }
+    }
+
+    .close {
+        position: absolute;
+        top: 5px;
+        right: 35px;
+        font-size: 40px;
+    }
+
+    .search-box {
+        margin-bottom: 35px;
+        width: 75%;
+
+        input {
+            padding: 5px 0;
+            border: none;
+            border-bottom: 1px solid $rosa-secundario;
+            background: transparent;
+            width: 100%;
+        }
+    }
+    
+    .search-box input::placeholder {
+        font-size: 18px;
+        font-style: italic;
+        color: $rosa-secundario;
+    }
+
+    .overlay-content hr {
+        margin: 5px 0;
+    }
+}
+
+.version {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    color: $rosa-secundario;
+}
+
+@include responsive-navbar;

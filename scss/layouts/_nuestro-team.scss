@@ -1,0 +1,72 @@
+/*-----Nuestro team-----*/
+
+.about-us {
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+
+    img {
+        width: 100%;
+    }
+}
+
+.texto-about {
+    color: $blanco;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: justify;
+    font-size: 24px;
+
+    h2 {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+
+    p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+}
+
+/*----Nuestro team: Tarjetas bootstrap-----*/
+
+.card-group {
+    margin: 0 auto;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.card {
+    background-color: $azul-secundario;
+    box-shadow: $box-shadow;
+    border: none;
+    margin: 0 auto;
+    border-radius: 15px;
+    min-width: 250px;
+    min-height: 700px;
+}
+
+.card-img-top {
+    border-radius: 15px 15px 10px 10px;
+    box-shadow: $box-shadow;
+}
+
+.card-title {
+    color: $color-rosa;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card-text {
+    color: $blanco;
+    font-size: 16px;
+    text-align: left;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+@include responsive-card;

@@ -1,0 +1,25 @@
+// Variables de colores y gradientes
+$colores: (
+  rosa: #fd6161,
+  rosa-secundario: #fd8b8b,
+  blanco: #ffffff,
+  rojo: #df2419,
+  azul-primario: #151e2a,
+  azul-secundario: #1a2736,
+  azul-background: #1b222c,
+);
+
+$gradiente-rosa-rojo: linear-gradient(#df2419, #fd6161);
+
+// Acceso a colores
+$color-rosa: map-get($colores, rosa);
+$rosa-secundario: map-get($colores, rosa-secundario);
+$blanco: map-get($colores, blanco);
+$rojo: map-get($colores, rojo);
+$azul-primario: map-get($colores, azul-primario);
+$azul-secundario: map-get($colores, azul-secundario);
+$azul-background: map-get($colores, azul-background);
+
+//variable sombra
+$box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+$text-shadow: 1px 1px 2px rgba(0,0,0,0.5);

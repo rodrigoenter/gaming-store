@@ -1,0 +1,89 @@
+/*-----Inicio: carrusel Swiffy-slider-----*/
+
+.swiffy-slider,
+h3 {
+    color: #ffffff;
+}
+
+/*-----Inicio: Estilos para los botones del primer carrusel swiffy-slider-----*/
+
+.slick-prev-1,
+.slick-next-1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background: none;
+    border: none;
+    color: #fd6161;
+    font-size: 50px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-prev-1:before,
+.slick-next-1:before {
+    font-family: "Quicksand", sans-serif;
+}
+
+.slick-prev-1:before {
+    content: '‹';
+    aria-label: 'Anterior';
+}
+
+.slick-next-1:before {
+    content: '›';
+}
+
+.slick-prev-1 {
+    left: 10px;
+}
+
+.slick-next-1 {
+    right: 10px;
+}
+
+/*-----Inicio: Estilos para los botones del segundo carrusel swiffy-slider-----*/
+
+.slick-prev-2,
+.slick-next-2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background: none;
+    border: none;
+    color: #fd6161;
+    font-size: 50px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-prev-2:before,
+.slick-next-2:before {
+    font-family: "Quicksand", sans-serif;
+}
+
+.slick-prev-2:before {
+    content: '‹';
+}
+
+.slick-next-2:before {
+    content: '›';
+}
+
+.slick-prev-2 {
+    left: 10px;
+}
+
+.slick-next-2 {
+    right: 10px;
+}

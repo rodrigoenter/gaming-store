@@ -1,0 +1,57 @@
+/*-----Inicio: Banner interactivo-----*/
+
+.banner-interactivo {
+    width: 100%;
+    background-image: $gradiente-rosa-rojo;
+    color: $azul-primario;
+    text-shadow: $text-shadow;
+    text-align: center;
+    padding: 5px;
+    overflow: hidden;
+}
+
+#countdown {
+    font-size: 32px;
+    font-weight: 500;
+    color: $blanco;
+    margin-top: 5px;
+}
+
+@keyframes moveLeftRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+h1 {
+    font-size: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    animation: moveLeftRight 4s linear infinite;
+
+    span {
+        display: inline-block;
+        animation: bounce 1s ease infinite;
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}

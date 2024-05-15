@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Store ¡Jugá sin límites!</title>
+    <meta name="title" content="Gaming Store ¡Jugá sin límites!" />
+    <meta name="description"
+        content="Somos tu tienda de referencia en todos los productos gamers en Argentina. Contamos con la mejor atención y calidad garantizada." />
+    <meta name="keywords"
+        content="tienda gaming, tienda de videojuegos, videojuegos, gamers, juegos, consolas, accesorios, accesorios gaming, ps5, xbox, nintendo, playstation, asus, microsoft, samsung, corsair, razer, logitech, nvidia, intel, amd, redragon" />
+    <!-- Metatag / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="Gaming Store ¡Jugá sin límites!" />
+    <meta property="og:description"
+        content="Somos tu tienda de referencia en todos los productos gamers en Argentina. Contamos con la mejor atención y calidad garantizada." />
+    <meta property="og:image" content="https://iili.io/J6J1gN1.png" />
+    <!-- Metatag / X -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="Gaming Store ¡Jugá sin límites!" />
+    <meta property="twitter:description"
+        content="Somos tu tienda de referencia en todos los productos gamers en Argentina. Contamos con la mejor atención y calidad garantizada." />
+    <meta property="twitter:image" content="assets/images/gaming-tags.png" />
+    <link rel="icon" type="image/jpg" href="https://iili.io/J6J1gN1.png">
+    <link rel="preload" as="image" href="assets/images/banners/banner_reduccion.avif" type="image/avif">
+    <link rel="preload" as="image" href="assets/images/banners/banner2_reduccion.avif" type="image/avif">
+    <link rel="preload" as="image" href="assets/images/banners/banner3_reduccion.avif" type="image/avif">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link rel="preload" as="image" href="assets/images/banners/banner.avif" type="image/avif">
+    <link rel="stylesheet" href="css/style.css">
+
+<body>
+    <!--Header-->
+    <header class="encabezado">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/images/svg/main-logo.svg" alt="logo de la marca">
+            </a>
+        </div>
+        <nav>
+            <ul class="links-navegacion">
+                <li class="active"><a href="index.html">Inicio</a></li>
+                <li><a href="pages/productos.html">Productos</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
+                <li><a href="pages/nuestro-team.html">Nuestro team</a></li>
+            </ul>
+        </nav>
+        <a href="pages/login.html" class="btn"><button>Login</button></a>
+        <!--Menú hamburguesa-->
+        <a onclick="openNav()" class="menu" href="#"><button>Menú</button></a>
+        <div class="overlay" id="mobile-menu">
+            <a onclick="closeNav()" href="" class="close">&times;</a>
+            <div class="overlay-content">
+                <div class="search-box">
+                    <input type="text" placeholder="Buscar productos...">
+                </div>
+                <a href="index.html">Inicio</a>
+                <hr class="menu-divider">
+                <a href="pages/productos.html">Productos</a>
+                <hr class="menu-divider">
+                <a href="pages/contacto.html">Contacto</a>
+                <hr class="menu-divider">
+                <a href="pages/nuestro-team.html">Nuestro team</a>
+                <hr class="menu-divider">
+                <a href="pages/login.html">Login</a>
+                <hr class="menu-divider">
+                <p class="version">Versión 1.0</p>
+            </div>
+    </header>
+    <!--Banner-->
+    <div class="banner-interactivo">
+        <h1><span>💸</span>Cyber fest: ¡Últimos días 20% off!<span>💸</span></h1>
+        <div id="countdown"></div>
+    </div>
+    <!--Carrusel bootstrap-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/banners/banner.avif" class="d-block w-100" alt="20% off - 3cuotas sin interés"
+                    loading="lazy">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/banners/banner2.avif" class="d-block w-100" alt="oferta-ps5" loading="lazy">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/banners/banner3.avif" class="d-block w-100" alt="Red-dragon-oficial"
+                    loading="lazy">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <!--Main content-->
+    <main class="productos-inicio">
+        <div class="contenedor-titulo-inicio">
+            <div class="titulo-inicio">
+                <h2 class="title">Productos destacados</h2>
+            </div>
+        </div>
+        <!-- Carrusel de productos destacados -->
+        <div class="swiffy-slider">
+            <section class="destacados-todos row justify-content-center">
+                <article class="productos-destacados col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <img src="assets/images/productos-index/ps5.avif" alt="PS5">
+                    <div class="nombre-producto">
+                        <h3>Play Station 5</h3>
+                        <p>God of war edition.</p>
+                        <p class="precio-anterior">$1.200.000</p>
+                        <p class="precio">$960.000</p>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <span class="etiqueta">Envío gratis</span>
+                </article>
+                <article class="productos-destacados col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <img src="assets/images/productos-index/xbox-xseries.avif" alt="Xbox-x-series">
+                    <div class="nombre-producto">
+                        <h3>Xbox X series</h3>
+                        <p>Diablo IV edition.</p>
+                        <p class="precio-anterior">$1.000.000</p>
+                        <p class="precio">$840.000</p>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <span class="etiqueta">Pocas unidades</span>
+                </article>
+                <article class="productos-destacados col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <img src="assets/images/productos-index/xbox-sseries.avif" alt="Xbox-s-series">
+                    <div class="nombre-producto">
+                        <h3>Xbox S series</h3>
+                        <p>Game pass incluido.</p>
+                        <p class="precio-anterior">$800.000</p>
+                        <p class="precio">$720.000</p>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <span class="etiqueta">10% off</span>
+                </article>
+                <article class="productos-destacados col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <img src="assets/images/productos-index/smg-crystal.avif" alt="Tv-samsung-crystal">
+                    <div class="nombre-producto">
+                        <h3>Samsung UHD 55"</h3>
+                        <p>Televisor 4k de 55".</p>
+                        <p class="precio-anterior">$728.000</p>
+                        <p class="precio">$600.000</p>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <span class="etiqueta">Pocas unidades</span>
+                </article>
+                <article class="productos-destacados col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <img src="assets/images/productos-index/impresora.avif" alt="Impresora-pantum">
+                    <div class="nombre-producto">
+                        <h3>Impresora Pantum</h3>
+                        <p>Tecnología laser.</p>
+                        <p class="precio-anterior">$450.000</p>
+                        <p class="precio">$360.000</p>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <span class="etiqueta">20% off</span>
+                </article>
+                <article class="productos-destacados col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <img src="assets/images/productos-index/neo-qled.avif" alt="Neo-qled">
+                    <div class="nombre-producto">
+                        <h3>Smart NeoQled 50"</h3>
+                        <p>Llegó la revolución.</p>
+                        <p class="precio-anterior">$2.000.000</p>
+                        <p class="precio">$1.900.000</p>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <span class="etiqueta">3 cuotas sin interés</span>
+                </article>
+            </section>
+            <!-- Botones de navegación del carrusel -->
+            <button type="button" class="slick-prev-1" aria-label="Anterior"></button>
+            <button type="button" class="slick-next-1" aria-label="Siguiente"></button>
+        </div>
+        <div class="titulo-inicio-2">
+            <h2 class="title">Armá tu PC</h2>
+        </div>
+        <div class="swiffy-slider swiffy-slider-2">
+            <section class="destacados-todos-2 row justify-content-center">
+                <article class="productos-destacados col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <img src="assets/images/productos-index/corei7.avif" alt="Precesador-Core-i7">
+                    <div class="nombre-producto">
+                        <h3>Intel Core i7</h3>
+                        <p>Pensado para triunfar.</p>
+                        <p class="precio-anterior">$550.000</p>
+                        <p class="precio">$440.000</p>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                        <span class="etiqueta">20% off</span>
+                    </div>
+                </article>
+                <article class="productos-destacados col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <img src="assets/images/productos-index/asus-prime-z790.avif" alt="Motherboard-asus">
+                    <div class="nombre-producto">
+                        <h3>Asus Prime Z790</h3>
+                        <p>Tecnología experta.</p>
+                        <p class="precio-anterior">$300.000</p>
+                        <p class="precio">$260.000</p>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                        <span class="etiqueta">Envío gratis</span>
+                    </div>
+                </article>
+                <article class="productos-destacados col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <img src="assets/images/productos-index/ram-fury.avif" alt="Memoria-ram-fury">
+                    <div class="nombre-producto">
+                        <h3>Ram Kingston 16GB</h3>
+                        <p>Ddr4-3200 SDRAM.</p>
+                        <p class="precio-anterior">$80.000</p>
+                        <p class="precio">$64.000</p>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <span class="etiqueta">20% off</span>
+                </article>
+                <article class="productos-destacados col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <img src="assets/images/productos-index/watercooling.avif" alt="Watercooler">
+                    <div class="nombre-producto">
+                        <h3>Cooler Master 240L</h3>
+                        <p>MasterLiquid 240L.</p>
+                        <p class="precio-anterior">$400.000</p>
+                        <p class="precio">$359.000</p>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                        <span class="etiqueta">Pocas unidades</span>
+                    </div>
+                </article>
+                <article class="productos-destacados col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <img src="assets/images/productos-index/gabinete.avif" alt="Gabinete-Asus-AP201-Prime">
+                    <div class="nombre-producto">
+                        <h3>Gabinete Asus AP201</h3>
+                        <p>MicroATX.</p>
+                        <p class="precio-anterior">$150.000</p>
+                        <p class="precio">$110.000</p>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <span class="etiqueta">3 cuotas sin interés</span>
+                </article>
+                <article class="productos-destacados col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <img src="assets/images/productos-index/fuente.avif" alt="Fuente-asus">
+                    <div class="nombre-producto">
+                        <h3>Asus ROG-1200P2</h3>
+                        <p>ROG Thor 1200W.</p>
+                        <p class="precio-anterior">$550.000</p>
+                        <p class="precio">$495.000</p>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <span class="etiqueta">10% off</span>
+                </article>
+            </section>
+            <button type="button" class="slick-prev-2" aria-label="Anterior"></button>
+            <button type="button" class="slick-next-2" aria-label="Siguiente"></button>
+        </div>
+        <!-- Estructuras grids -->
+        <div class="container-grids">
+            <div class="box-grids">
+                <div class="boxes">
+                    <img src="assets/images/svg/clock.svg" alt="box">
+                    <h3>Horarios de atención</h3>
+                    <p>8:00hs a 21:00hs.</p>
+                    <a href="#" class="btn-grids">Horarios</a>
+                </div>
+                <div class="boxes">
+                    <img src="assets/images/svg/support.svg" alt="box">
+                    <h3>Servicios</h3>
+                    <p>Soporte especializado.</p>
+                    <a href="#" class="btn-grids">Contactar</a>
+                </div>
+                <div class="boxes">
+                    <img src="assets/images/svg/drivers.svg" alt="box">
+                    <h3>Recursos</h3>
+                    <p>Descarga drivers útiles.</p>
+                    <a href="#" class="btn-grids">Recursos</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Marcas -->
+    <section class="marcas">
+        <div class="logos-marcas">
+            <a href="https://shop.samsung.com/ar" target="_blank">
+                <img src="assets/images/logos-marcas/samsung.svg" alt="samsung">
+            </a>
+            <a href="https://www.nvidia.com/es-la/" target="_blank">
+                <img src="assets/images/logos-marcas/nvidia.svg" alt="nvidia">
+            </a>
+            <a href="https://www.asus.com/ar/" target="_blank">
+                <img src="assets/images/logos-marcas/asus.svg" alt="asus">
+            </a>
+            <a href="https://www.corsair.com/es/es" target="_blank">
+                <img src="assets/images/logos-marcas/corsair.svg" alt="corsair">
+            </a>
+            <a href="https://www.playstation.com/es-ar/ps5/" target="_blank">
+                <img src="assets/images/logos-marcas/ps5.svg" alt="ps5-logo">
+            </a>
+            <a href="https://www.intel.la" target="_blank">
+                <img src="assets/images/logos-marcas/intel.svg" alt="intel">
+            </a>
+            <a href="https://redragon.es" target="_blank">
+                <img src="assets/images/logos-marcas/redragon.svg" alt="redragon">
+            </a>
+        </div>
+    </section>
+    <!-- Formulario de suscripción -->
+    <div class="formulario-suscripcion">
+        <div class="subscribe-form">
+            <h3>Suscribite para más información 📬</h3>
+            <input type="email" name="email" id="email" placeholder="Ingresá tu correo electrónico" required>
+            <a href="#">
+                <button type="submit">Suscribirse</button>
+            </a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" defer></script>
+    <script src="js/gaming.js"></script>
+    <script type="text/javascript" src="js/gaming.js"></script>
+    <!--footer-->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="top">
+                <h3>Gaming Store ¡Jugá sin límites!</h3>
+            </div>
+            <div class="middle">
+                <div class="middle-left">
+                    <a href="mailto:gamingstore@yopmail.com" target="_blank">
+                        <img src="assets/images/footer/mail.png" alt="mail">
+                    </a>
+                    <p>gamingstore@yopmail.com</p>
+                    <a href="https://maps.app.goo.gl/q3S3LrZuthJzdoDT6" target="_blank">
+                        <img src="assets/images/footer/location.png" alt="location">
+                    </a>
+                    <p>Avenida de los árboles 3545</p>
+                </div>
+                <div class="middle-center">
+                    <a href="https://www.mercadolibre.com.ar" target="_blank">
+                        <img src="assets/images/footer/meli.png" alt="meli">
+                    </a>
+                    <a href="https://www.visa.com.ar" target="_blank">
+                        <img src="assets/images/footer/visa.png" alt="visa">
+                    </a>
+                    <a href="https://www.mastercard.com.ar/es-ar.html" target="_blank">
+                        <img src="assets/images/footer/mastercard.png" alt="mastercard">
+                    </a>
+                </div>
+                <div class="middle-right">
+                    <a href="https://web.whatsapp.com" target="_blank">
+                        <img src="assets/images/footer/whatsapp.png" alt="whatsapp">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="assets/images/footer/ig.png" alt="instagram">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="assets/images/footer/facebook.png" alt="facebook">
+                    </a>
+                </div>
+            </div>
+            <div class="bottom">
+                <p>Argentina</p>
+                <p2>Todos los derechos reservados - 2024 ©</p2>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

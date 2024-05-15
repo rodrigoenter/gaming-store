@@ -1,0 +1,105 @@
+/*-----Contacto: Mapa de ubicación-----*/
+
+.ubicacion {
+    margin-top: 100px;
+}
+
+/*-----Contacto:Formulario de contacto-----*/
+
+.form-contacto {
+    padding: 50px 55px;
+    text-align: center;
+    background-color: $azul-secundario;
+    box-shadow: $box-shadow;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.formulario-contacto {
+    h2 {
+        color: $blanco;
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    label {
+        color: $blanco;
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 15px;
+        display: block;
+        text-align: left;
+    }
+
+    input {
+        padding: 5px 20px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        color: $azul-primario;
+        width: 100%;
+        border: none;
+
+        &::placeholder {
+            color: $azul-background;
+            font-size: 16px;
+            font-style: italic;
+        }
+    }
+}
+
+textarea {
+    padding: 5px 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    color: $blanco;
+    width: 100%;
+    border: none;
+
+    &::placeholder {
+        color: $azul-background;
+        font-size: 16px;
+        font-style: italic;
+    }
+}
+
+.form-contacto textarea {
+    resize: none;
+}
+
+.terminos {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+
+    a {
+        color: $color-rosa;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+}
+
+.boton-contacto {
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 50px;
+    background-color: $color-rosa;
+    color: $blanco;
+    cursor: pointer;
+    padding: 15px 40px;
+    width: 100%;
+    box-sizing: border-box;
+
+    &:hover {
+        color: $blanco;
+        background-image: $gradiente-rosa-rojo;
+        transition: all 0.3s ease 0s;
+    }
+}
+
+@include responsive-formulario-contacto;

@@ -1,0 +1,94 @@
+/*-----Fotter-----*/
+
+footer {
+    background-color: $azul-primario;
+    color: $blanco;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.top {
+    text-align: center;
+    padding: 20px;
+}
+
+.middle {
+    display: flex;
+    font-size: 16px;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
+
+.middle-left,
+.middle-center,
+.middle-right {
+    flex: 1;
+    text-align: center;
+}
+
+.middle-left {
+    img {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+
+    p {
+
+        vertical-align: middle;
+        padding: 5px;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+}
+
+
+.middle-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+    img {
+        padding: 15px;
+    }
+}
+
+.middle-right img {
+    padding: 15px;
+}
+
+.bottom {
+    text-align: center;
+
+    p {
+        font-size: 18px;
+        font-weight: 800;
+        height: 10px;
+        margin-bottom: 5px;
+    }
+
+    p2 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+@include responsive-footer;

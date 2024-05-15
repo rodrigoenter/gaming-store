@@ -1,0 +1,20 @@
+//abstracts
+@import "abstracts/responsive";
+//base
+@import "base/variables";
+@import "base/reset";
+@import "base/mixins";
+@import "base/breadcrumbs";
+@import "base/fuentes";
+//components
+@import "components/header";
+@import "components/footer";
+@import "components/carrusel-swiffy-slider.scss";
+@import "components/banners";
+@import "components/carrusel-bootstrap";
+//layouts
+@import "layouts/index";
+@import "layouts/productos";
+@import "layouts/contacto";
+@import "layouts/nuestro-team";
+@import "layouts/login";
